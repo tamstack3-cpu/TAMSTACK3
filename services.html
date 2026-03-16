@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMSTACK3 - Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/TAMSTACK3_logo.png" alt="TAMSTACK3 Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-cta">
+            <a href="contact.html" class="btn-started">Get Started</a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="mobile-logo">TamStack<span>3</span></span>
+            <button class="close-menu" id="closeMenuBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-item"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="services.html" class="mobile-nav-item active"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="about.html" class="mobile-nav-item"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-item"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="contact.html" class="mobile-nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="contact.html" class="mobile-cta-btn">Get Started</a>
+        </div>
+    </div>
+
+    <main class="page-wrapper">
+
+        <!-- Page Hero Banner -->
+        <section class="page-hero-banner">
+            <div class="page-hero-dots"></div>
+            <div class="page-hero-dots-left"></div>
+            <div class="page-hero-content">
+                <div class="page-breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Services</span></div>
+                <h1>Our <span class="pro-gradient">Services</span></h1>
+                <p>High-performance web solutions tailored for modern businesses.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="neon-services" style="padding-top: 80px;">
+            <div class="container">
+                <div class="section-title"><h2>What We Offer</h2></div>
+                <div class="services-wrapper">
+                    <div class="service-box">
+                        <div class="hover-layer"></div>
+                        <div class="content-wrap">
+                            <div class="icon-container"><i class="fas fa-code"></i></div>
+                            <h3>Web Development</h3>
+                            <p>Creating high-performance, scalable websites with a focus on clean architecture, fast loading speeds, and flawless mobile responsiveness.</p>
+                            <a href="contact.html" class="read-more">Get a Quote</a>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="hover-layer"></div>
+                        <div class="content-wrap">
+                            <div class="icon-container"><i class="fas fa-palette"></i></div>
+                            <h3>UI/UX Designing</h3>
+                            <p>Designing modern and intuitive user interfaces that enhance user engagement and provide a premium digital experience for your brand.</p>
+                            <a href="contact.html" class="read-more">Get a Quote</a>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="hover-layer"></div>
+                        <div class="content-wrap">
+                            <div class="icon-container"><i class="fas fa-laptop-code"></i></div>
+                            <h3>GHL Custom Websites</h3>
+                            <p>Building fully customized and conversion-focused business websites directly inside GoHighLevel, integrated with your marketing ecosystem.</p>
+                            <a href="contact.html" class="read-more">Get a Quote</a>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="hover-layer"></div>
+                        <div class="content-wrap">
+                            <div class="icon-container"><i class="fas fa-search"></i></div>
+                            <h3>SEO Optimization</h3>
+                            <p>Boosting your online visibility with proven SEO strategies, keyword optimization, and technical improvements that drive organic traffic.</p>
+                            <a href="contact.html" class="read-more">Get a Quote</a>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="hover-layer"></div>
+                        <div class="content-wrap">
+                            <div class="icon-container"><i class="fas fa-server"></i></div>
+                            <h3>Backend Development</h3>
+                            <p>Robust, secure, and scalable backend systems with API integrations, database management, and cloud deployment solutions.</p>
+                            <a href="contact.html" class="read-more">Get a Quote</a>
+                        </div>
+                    </div>
+                    <div class="service-box">
+                        <div class="hover-layer"></div>
+                        <div class="content-wrap">
+                            <div class="icon-container"><i class="fas fa-mobile-alt"></i></div>
+                            <h3>Responsive Design</h3>
+                            <p>Every website we build is fully responsive, providing a flawless experience across all devices — mobile, tablet, and desktop.</p>
+                            <a href="contact.html" class="read-more">Get a Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pro-pricing">
+            <div class="container">
+                <div class="pro-header">
+                    <span class="pro-badge">Pricing Plans</span>
+                    <h2 class="pro-main-title">Transparent Pricing for <span class="cyan-text">Every Need</span></h2>
+                    <p class="pro-subtitle">No hidden costs. Choose a plan that fits your current business scale.</p>
+                </div>
+                <div class="pro-grid">
+                    <div class="pro-card">
+                        <div class="pro-card-head">
+                            <h3>Basic</h3>
+                            <div class="pro-amount"><span class="number">150$</span></div>
+                            <p>Essential features for personal projects.</p>
+                        </div>
+                        <div class="pro-card-body">
+                            <ul class="pro-features">
+                                <li><i class="fas fa-check"></i> Responsive Web Page</li>
+                                <li><i class="fas fa-check"></i> Domain</li>
+                                <li><i class="fas fa-check"></i> Basic template design</li>
+                                <li><i class="fas fa-check"></i> Social media links</li>
+                            </ul>
+                        </div>
+                        <div class="pro-card-foot"><a href="contact.html" class="pro-btn-outline">Choose Basic</a></div>
+                    </div>
+                    <div class="pro-card pro-featured">
+                        <div class="pro-card-head">
+                            <h3>Medium</h3>
+                            <div class="pro-amount"><span class="number">260$</span></div>
+                            <p>Advanced tools for growing businesses.</p>
+                        </div>
+                        <div class="pro-card-body">
+                            <ul class="pro-features">
+                                <li><i class="fas fa-check"></i> Multi-page Architecture</li>
+                                <li><i class="fas fa-check"></i> SEO optimization</li>
+                                <li><i class="fas fa-check"></i> Custom UI/UX Design</li>
+                                <li><i class="fas fa-check"></i> Gallery / portfolio</li>
+                            </ul>
+                        </div>
+                        <div class="pro-card-foot"><a href="contact.html" class="pro-btn-solid">Get Started</a></div>
+                    </div>
+                    <div class="pro-card">
+                        <div class="pro-card-head">
+                            <h3>Premium</h3>
+                            <div class="pro-amount"><span class="number">360$</span></div>
+                            <p>Full-scale solutions for large teams.</p>
+                        </div>
+                        <div class="pro-card-body">
+                            <ul class="pro-features">
+                                <li><i class="fas fa-check"></i> Custom Web Application</li>
+                                <li><i class="fas fa-check"></i> API & Webhook Setup</li>
+                                <li><i class="fas fa-check"></i> User accounts / dashboards</li>
+                                <li><i class="fas fa-check"></i> 24/7 Premium Support</li>
+                            </ul>
+                        </div>
+                        <div class="pro-card-foot"><a href="contact.html" class="pro-btn-outline">Go Enterprise</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col brand-col">
+                        <h2 class="footer-logo">TamStack<span class="cyan-text">3</span></h2>
+                        <p>Engineering high-performance digital solutions. From GHL ecosystems to custom web architecture, we build for the future.</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/tam-stack3-7b373439b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/tamstack3?igsh=MThpZzByZHk4cG41Zg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/923494310687" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/share/1FKUVcqVyu/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html">Web Development</a></li>
+                            <li><a href="services.html">UI/UX Design</a></li>
+                            <li><a href="services.html">GHL Solutions</a></li>
+                            <li><a href="services.html">SEO Optimization</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col newsletter-col">
+                        <h4>Ready to scale?</h4>
+                        <p>Stay updated with our latest tech insights.</p>
+                        <form class="footer-form">
+                            <input type="email" placeholder="Email Address">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 TamStack3 Technologies. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+        function openMenu() { mobileMenu.classList.add('active'); mobileOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; hamburgerBtn.classList.add('active'); }
+        function closeMenu() { mobileMenu.classList.remove('active'); mobileOverlay.classList.remove('active'); document.body.style.overflow = ''; hamburgerBtn.classList.remove('active'); }
+        hamburgerBtn.addEventListener('click', openMenu);
+        closeMenuBtn.addEventListener('click', closeMenu);
+        mobileOverlay.addEventListener('click', closeMenu);
+        mobileNavItems.forEach(item => { item.addEventListener('click', closeMenu); });
+    </script>
+</body>
+</html>

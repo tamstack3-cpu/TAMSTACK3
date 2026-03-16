@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMSTACK3 - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/TAMSTACK3_logo.png" alt="TAMSTACK3 Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-cta">
+            <a href="contact.html" class="btn-started">Get Started</a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="mobile-logo">TamStack<span>3</span></span>
+            <button class="close-menu" id="closeMenuBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-item"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="services.html" class="mobile-nav-item"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="about.html" class="mobile-nav-item"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-item"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="contact.html" class="mobile-nav-item active"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="contact.html" class="mobile-cta-btn">Get Started</a>
+        </div>
+    </div>
+
+    <main class="page-wrapper">
+
+        <!-- Page Hero Banner -->
+        <section class="page-hero-banner">
+            <div class="page-hero-dots"></div>
+            <div class="page-hero-dots-left"></div>
+            <div class="page-hero-content">
+                <div class="page-breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Contact</span></div>
+                <h1>Get In <span class="pro-gradient">Touch</span></h1>
+                <p>Have a project or idea? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-unique" style="padding-top: 80px;">
+            <div class="contact-inner-unique">
+                <div class="contact-card">
+                    <div class="contact-left-unique">
+                        <div class="angle-bg"></div>
+                        <h3>Reach Out</h3>
+                        <p>Have a project, idea, or challenge? Let's discuss how we can build something amazing together.</p>
+                        <ul>
+                            <li>📧 tamstack3@gmail.com</li>
+                            <li>📞 +92-349-4310687</li>
+                            <li>📍 Islamabad, Pakistan</li>
+                        </ul>
+                    </div>
+                    <div class="contact-right-unique">
+                        <h2>Contact Us</h2>
+
+                        <!-- Success Message -->
+                        <div id="successMsg" style="display:none; background:#e0fdf4; border:1px solid #1EC9D6; border-radius:12px; padding:16px 20px; margin-bottom:20px; color:#065f46; font-weight:600; font-size:15px;">
+                            ✅ The message has been sent! We will contact you soon.
+                        </div>
+
+                        <!-- Error Message -->
+                        <div id="errorMsg" style="display:none; background:#fef2f2; border:1px solid #f87171; border-radius:12px; padding:16px 20px; margin-bottom:20px; color:#991b1b; font-weight:600; font-size:15px;">
+                            ❌ Something went wrong. Please try again or send an email directly.
+                        </div>
+
+                        <form id="contactForm">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="from_email" placeholder="you@example.com" required>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                            <button type="submit" id="submitBtn">
+                                <span id="btnText">Send Message</span>
+                                <span id="btnLoader" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending…</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col brand-col">
+                        <h2 class="footer-logo">TamStack<span class="cyan-text">3</span></h2>
+                        <p>Engineering high-performance digital solutions. From GHL ecosystems to custom web architecture, we build for the future.</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/tam-stack3-7b373439b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/tamstack3?igsh=MThpZzByZHk4cG41Zg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/923494310687" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/share/1FKUVcqVyu/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html">Web Development</a></li>
+                            <li><a href="services.html">UI/UX Design</a></li>
+                            <li><a href="services.html">GHL Solutions</a></li>
+                            <li><a href="services.html">SEO Optimization</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col newsletter-col">
+                        <h4>Ready to scale?</h4>
+                        <p>Stay updated with our latest tech insights.</p>
+                        <form class="footer-form">
+                            <input type="email" placeholder="Email Address">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 TamStack3 Technologies. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+
+        // ================================================
+        //  ⚠️  EMAILJS SETUP - SIRF YAHAN 3 IDs DAALNI HAIN
+        // ================================================
+        //
+        //  Step 1: emailjs.com pe free account banao
+        //  Step 2: "Email Services" mein Gmail add karo
+        //          → Service ID milegi (e.g. service_abc123)
+        //  Step 3: "Email Templates" mein naya template banao:
+        //          Subject: New Message from {{from_name}}
+        //          Body:
+        //            Name:    {{from_name}}
+        //            Email:   {{from_email}}
+        //            Message: {{message}}
+        //          → Template ID milegi (e.g. template_xyz789)
+        //  Step 4: "Account > API Keys" se Public Key copy karo
+        //  Step 5: Neeche teeno values replace karo aur save karo
+        //
+        // ================================================
+
+        const EMAILJS_PUBLIC_KEY  = "LOg_PApfHwFvaWF2C";    // ← Yahan apni Public Key daalo
+        const EMAILJS_SERVICE_ID  = "service_6hpe8bv";    // ← Yahan apni Service ID daalo
+        const EMAILJS_TEMPLATE_ID = "template_dbcdjvf";   // ← Yahan apni Template ID daalo
+
+        // EmailJS Initialize
+        emailjs.init(EMAILJS_PUBLIC_KEY);
+
+        // Form Submit
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const btnText    = document.getElementById('btnText');
+            const btnLoader  = document.getElementById('btnLoader');
+            const submitBtn  = document.getElementById('submitBtn');
+            const successMsg = document.getElementById('successMsg');
+            const errorMsg   = document.getElementById('errorMsg');
+
+            // Purane messages hide karo
+            successMsg.style.display = 'none';
+            errorMsg.style.display   = 'none';
+
+            // Button loader show karo
+            btnText.style.display    = 'none';
+            btnLoader.style.display  = 'inline';
+            submitBtn.disabled       = true;
+
+            // Template variables
+            const templateParams = {
+                from_name  : document.getElementById('name').value,
+                from_email : document.getElementById('email').value,
+                message    : document.getElementById('message').value,
+                to_email   : 'tamstack3@gmail.com'
+            };
+
+            // EmailJS send
+            emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+                .then(function() {
+                    successMsg.style.display = 'block';
+                    document.getElementById('contactForm').reset();
+                    btnText.style.display    = 'inline';
+                    btnLoader.style.display  = 'none';
+                    submitBtn.disabled       = false;
+                    setTimeout(() => { successMsg.style.display = 'none'; }, 6000);
+                }, function(error) {
+                    errorMsg.style.display   = 'block';
+                    btnText.style.display    = 'inline';
+                    btnLoader.style.display  = 'none';
+                    submitBtn.disabled       = false;
+                    console.error('EmailJS Error:', error);
+                });
+        });
+
+        // Mobile Menu
+        const hamburgerBtn   = document.getElementById('hamburgerBtn');
+        const mobileMenu     = document.getElementById('mobileMenu');
+        const mobileOverlay  = document.getElementById('mobileOverlay');
+        const closeMenuBtn   = document.getElementById('closeMenuBtn');
+        const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+
+        function openMenu()  { mobileMenu.classList.add('active'); mobileOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; hamburgerBtn.classList.add('active'); }
+        function closeMenu() { mobileMenu.classList.remove('active'); mobileOverlay.classList.remove('active'); document.body.style.overflow = ''; hamburgerBtn.classList.remove('active'); }
+
+        hamburgerBtn.addEventListener('click', openMenu);
+        closeMenuBtn.addEventListener('click', closeMenu);
+        mobileOverlay.addEventListener('click', closeMenu);
+        mobileNavItems.forEach(item => { item.addEventListener('click', closeMenu); });
+
+    </script>
+
+</body>
+</html>

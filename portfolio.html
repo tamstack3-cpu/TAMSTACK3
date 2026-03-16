@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMSTACK3 - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/TAMSTACK3_logo.png" alt="TAMSTACK3 Logo"></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-cta">
+            <a href="contact.html" class="btn-started">Get Started</a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+        </button>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="mobile-logo">TamStack<span>3</span></span>
+            <button class="close-menu" id="closeMenuBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="mobile-nav-item"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="services.html" class="mobile-nav-item"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="about.html" class="mobile-nav-item"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="portfolio.html" class="mobile-nav-item active"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="contact.html" class="mobile-nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="contact.html" class="mobile-cta-btn">Get Started</a>
+        </div>
+    </div>
+
+    <main class="page-wrapper">
+
+        <!-- Page Hero Banner -->
+        <section class="page-hero-banner">
+            <div class="page-hero-dots"></div>
+            <div class="page-hero-dots-left"></div>
+            <div class="page-hero-content">
+                <div class="page-breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Portfolio</span></div>
+                <h1>Our <span class="pro-gradient">Portfolio</span></h1>
+                <p>A showcase of our best work — built with precision and purpose.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="portfolio-grid-section" style="padding-top: 80px;">
+            <div class="container">
+                <div class="p-section-header">
+                    <h2 class="p-main-title">Recent Projects</h2>
+                    <p class="p-description">Here's a selection of our recent work, showcasing skills in creating user-centric and visually appealing interfaces.</p>
+                </div>
+                <div class="p-cards-wrapper">
+                    <div class="p-card">
+                        <div class="p-img-box"><img src="images/Screenshot 2026-03-14 151510.png" alt="University Website"></div>
+                        <div class="p-content">
+                            <span class="p-tag">WEB DEVELOPMENT</span>
+                            <h3 class="p-title">University Website</h3>
+                            <p class="p-text">This project demonstrates frontend skills by presenting educational information in an attractive and user-friendly layout without backend functionality.</p>
+                            <a href="https://university-website-vert.vercel.app/" target="_blank" class="p-btn">View Live <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <div class="p-img-box"><img src="images/Screenshot 2026-03-14 150337.png" alt="SmartWork Dashboard"></div>
+                        <div class="p-content">
+                            <span class="p-tag">UI/UX DESIGN</span>
+                            <h3 class="p-title">SmartWork Dashboard UI</h3>
+                            <p class="p-text">A modern and clean SaaS landing page UI designed for productivity and workflow management platforms. It features clear typography, analytics visuals, and a user-friendly layout.</p>
+                            <a href="https://www.figma.com/proto/HEH3s19T5GK3LlNuEtTzXh/website--figma-?t=jcxr8Lzpj6dJKWi3-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=2-2" class="p-btn">View <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-card">
+                        <div class="p-img-box"><img src="images/Screenshot 2026-03-14 152212.png" alt="Dental Clinic"></div>
+                        <div class="p-content">
+                            <span class="p-tag">GHL CUSTOM WEBSITE</span>
+                            <h3 class="p-title">Dental Clinic</h3>
+                            <p class="p-text">A responsive and professional website for a dental clinic, providing details about services, doctors, and patient care with a clean and welcoming design.</p>
+                            <a href="https://id.funnelpandit.com/v2/preview/sjxeD67DpUSaN6MwF3pV" target="_blank" class="p-btn">View Live <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col brand-col">
+                        <h2 class="footer-logo">TamStack<span class="cyan-text">3</span></h2>
+                        <p>Engineering high-performance digital solutions. From GHL ecosystems to custom web architecture, we build for the future.</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/tam-stack3-7b373439b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/tamstack3?igsh=MThpZzByZHk4cG41Zg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/923494310687" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/share/1FKUVcqVyu/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html">Web Development</a></li>
+                            <li><a href="services.html">UI/UX Design</a></li>
+                            <li><a href="services.html">GHL Solutions</a></li>
+                            <li><a href="services.html">SEO Optimization</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col newsletter-col">
+                        <h4>Ready to scale?</h4>
+                        <p>Stay updated with our latest tech insights.</p>
+                        <form class="footer-form">
+                            <input type="email" placeholder="Email Address">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 TamStack3 Technologies. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+        function openMenu() { mobileMenu.classList.add('active'); mobileOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; hamburgerBtn.classList.add('active'); }
+        function closeMenu() { mobileMenu.classList.remove('active'); mobileOverlay.classList.remove('active'); document.body.style.overflow = ''; hamburgerBtn.classList.remove('active'); }
+        hamburgerBtn.addEventListener('click', openMenu);
+        closeMenuBtn.addEventListener('click', closeMenu);
+        mobileOverlay.addEventListener('click', closeMenu);
+        mobileNavItems.forEach(item => { item.addEventListener('click', closeMenu); });
+    </script>
+</body>
+</html>
